@@ -1,0 +1,39 @@
+﻿@model M_Model.Models.Student
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        td {
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+    <h3>Student List</h3>
+    <hr />
+    <div>
+        <table border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <td>Roll No</td>
+                    <td>Name</td>
+                    <td>Standard</td>
+                    <td>Class</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.RollNo</td>
+                    <td>@Model.Name</td>
+                    <td>@Model.Standard</td>
+                    <td>@Model.Class</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
